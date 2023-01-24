@@ -1,0 +1,18 @@
+.items {
+  display: flex;
+  flex-direction: column;
+  /* flex-direction: row; */
+  align-items: center;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+
+  /* align-items: flex-start; */
+  /* width: 60px; */
+  /* height: 40px; */
+  margin-bottom: 5px;
+  font-size: 24px;
+  background-color: rgba(54, 52, 52, 0.238);
+}
