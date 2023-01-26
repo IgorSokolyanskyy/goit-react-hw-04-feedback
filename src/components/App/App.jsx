@@ -15,7 +15,7 @@ export default function App() {
   const { good, neutral, bad } = state;
 
   const addFeedback = options =>
-    setState(s => ({ ...state, [options]: state[options] + 1 }));
+    setState(state => ({ ...state, [options]: state[options] + 1 }));
 
   const countTotalFeedback = () =>
     Object.values(state).reduce((value, acc) => acc + value, 0);
