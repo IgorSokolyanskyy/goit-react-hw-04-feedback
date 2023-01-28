@@ -10,19 +10,10 @@ export default function App() {
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
 
-  // const [state, setState] = useState({
-  //   good: 0,
-  //   neutral: 0,
-  //   bad: 0,
-  // });
-
-  // const { good, neutral, bad } = state;
-
   const feedback = { good, neutral, bad };
 
-  const addFeedback = options => {
-    // setState(state => ({ ...state, [options]: state[options] + 1 }));
-    switch (options) {
+  const addFeedback = type => {
+    switch (type) {
       case 'good':
         setGood(prevGood => prevGood + 1);
         break;
@@ -47,7 +38,6 @@ export default function App() {
     <div className={css.card}>
       <Section title="Please leave feedback">
         <FeedbackOptions
-          // options={Object.keys(state)}
           options={Object.keys(feedback)}
           onLeaveFeedback={addFeedback}
         />
