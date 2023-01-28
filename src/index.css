@@ -8,7 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-image: url(../src/images/BgImg.jpg);
+  background-image: url(../src/images/Bg-Img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
